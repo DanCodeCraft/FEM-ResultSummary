@@ -41,42 +41,111 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  align-items: center;
-  text-align: center;
 
+  max-width: 675px;
   margin: 0 auto;
-  /* padding: 1.5rem; */
   min-height: 100vh;
 }
 
+/* SCORE */
 .score__container {
   background: linear-gradient(var(--slateblue), var(--royalblue));
   padding: 1.2rem;
+  border-radius: 0 0 2.2rem 2.2rem;
+  align-items: center;
+  text-align: center;
+
+  margin-bottom: 1.2rem;
 }
 
 .score__header {
   font-weight: 700;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem;
 }
 
 .score__circle {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 6rem;
-  border-radius: 100%;
+  height: 9rem;
+  width: 9rem;
   background: linear-gradient(var(--violetblue), var(--persianblue));
+  margin: auto;
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
 }
 
 .score__final {
   color: var(--white);
-  font-size: 3.6rem;
-  font-weight: 800;
+  font-size: 3.4rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+
+  transform: translate(0, 30%);
 }
 
 .score__of {
+  font-size: 0.9rem;
+  font-weight: 700;
   margin-bottom: 1rem;
+  opacity: 50%;
+}
+
+.score__tier {
+  font-size: 1.4rem;
+  color: var(--white);
+  font-weight: 700;
+}
+
+.score__summary {
+  max-width: 320px;
+  margin-bottom: 1.2rem;
+  /* padding: auto; */
+  margin: auto;
+  margin-bottom: 1.5rem;
+  opacity: 90%;
+}
+
+/* SUMMARY */
+.summary__container {
+  padding: 0 2rem 0;
+}
+
+.summary__header {
+  color: var(--greyblue);
+  font-weight: 700;
+  margin-bottom: 1.4rem;
+}
+
+.category {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  padding: 1rem;
+  border-radius: 16px;
+}
+
+.reaction {
+  background-color: hsla(0, 100%, 67%, 0.07);
+  color: hsla(0, 100%, 67%, 0.9);
+}
+
+.memory {
+  background-color: hsl(39, 100%, 56%, 0.07);
+  color: hsl(39, 100%, 56%, 0.8);
+}
+
+.verbal {
+  background-color: hsl(166, 100%, 37%, 0.07);
+  color: hsl(166, 100%, 37%);
+}
+
+.visual {
+  background-color: hsl(234, 85%, 45%, 0.07);
+  color: hsl(234, 85%, 45%);
+}
+
+.points {
+  font-weight: 800;
+  color: var(--greyblue);
 }
 
 /* =======MEDIA QUERY====== */
