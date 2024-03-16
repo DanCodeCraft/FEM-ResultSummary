@@ -31,11 +31,52 @@ body {
   500, 700, 800 */
   font-family: "Hanken Grotesk", sans-serif;
   font-size: 1.1rem;
+  color: var(--lavender);
 }
 
 .attribution {
 }
 
 /* =======STYLES====== */
+.container {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  text-align: center;
+
+  margin: 0 auto;
+  /* padding: 1.5rem; */
+  min-height: 100vh;
+}
+
+.score__container {
+  background: linear-gradient(var(--slateblue), var(--royalblue));
+  padding: 1.2rem;
+}
+
+.score__header {
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.score__circle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 6rem;
+  border-radius: 100%;
+  background: linear-gradient(var(--violetblue), var(--persianblue));
+}
+
+.score__final {
+  color: var(--white);
+  font-size: 3.6rem;
+  font-weight: 800;
+}
+
+.score__of {
+  margin-bottom: 1rem;
+}
 
 /* =======MEDIA QUERY====== */
