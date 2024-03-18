@@ -30,27 +30,23 @@ body {
   /* Font Weight
   500, 700, 800 */
   font-family: "Hanken Grotesk", sans-serif;
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: var(--lavender);
 }
 
-.attribution {
-}
-
 /* =======STYLES====== */
+/* SCORE */
 .container {
   display: flex;
   flex-direction: column;
 
   max-width: 675px;
   margin: 0 auto;
-  min-height: 100vh;
 }
 
-/* SCORE */
 .score__container {
   background: linear-gradient(var(--slateblue), var(--royalblue));
-  padding: 1.2rem;
+  padding: 1.2rem 0 2.2rem 0;
   border-radius: 0 0 2.2rem 2.2rem;
   align-items: center;
   text-align: center;
@@ -59,7 +55,8 @@ body {
 }
 
 .score__header {
-  font-weight: 700;
+  font-size: 1.1rem;
+  font-weight: 800;
   margin-bottom: 1.2rem;
 }
 
@@ -69,13 +66,13 @@ body {
   background: linear-gradient(var(--violetblue), var(--persianblue));
   margin: auto;
   border-radius: 50%;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.5rem;
 }
 
 .score__final {
   color: var(--white);
   font-size: 3.4rem;
-  font-weight: 700;
+  font-weight: 800;
   margin-bottom: 1.2rem;
 
   transform: translate(0, 30%);
@@ -90,25 +87,25 @@ body {
 
 .score__tier {
   font-size: 1.4rem;
+  margin-bottom: 0.8rem;
   color: var(--white);
   font-weight: 700;
 }
 
 .score__summary {
-  max-width: 320px;
-  margin-bottom: 1.2rem;
-  /* padding: auto; */
+  max-width: 275px;
   margin: auto;
-  margin-bottom: 1.5rem;
   opacity: 90%;
 }
 
 /* SUMMARY */
+
 .summary__container {
   padding: 0 2rem 0;
 }
 
 .summary__header {
+  font-size: 1.1rem;
   color: var(--greyblue);
   font-weight: 700;
   margin-bottom: 1.4rem;
@@ -121,6 +118,11 @@ body {
   font-weight: 500;
   padding: 1rem;
   border-radius: 16px;
+}
+
+.left__side {
+  display: flex;
+  gap: 10px;
 }
 
 .reaction {
@@ -148,4 +150,39 @@ body {
   color: var(--greyblue);
 }
 
+.points__of {
+  text-align: right;
+  color: var(--greyblue);
+  opacity: 40%;
+}
+
+/* CONTINUE BUTTON */
+
+.continue__btn {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+
+  color: var(--white);
+  background-color: var(--greyblue);
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 2rem;
+  padding: 1rem;
+  margin: 1.8rem auto;
+}
+
+.continue__btn:hover,
+.continue__btn:active {
+  background: linear-gradient(var(--slateblue), var(--royalblue));
+}
+
+.attribution {
+  text-align: center;
+  font-size: 0.6rem;
+  margin-top: 1.5rem;
+}
+
 /* =======MEDIA QUERY====== */
+@media (min-width: 62.5em) {
+}
