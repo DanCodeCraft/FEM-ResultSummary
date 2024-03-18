@@ -23,16 +23,13 @@
 
 /* =======GENERAL====== */
 html {
-  background-color: var(--white);
+  background-color: var(--paleblue);
 }
 
 body {
-  /* display: grid; */
-  /* place-content: center; */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
   min-height: 100vh;
 
   /* Font Weight
@@ -45,11 +42,8 @@ body {
 /* =======STYLES====== */
 /* SCORE */
 .container {
-  /* display: flex; */
-  /* flex-direction: column; */
   max-width: 55rem;
-  /* margin: 0 auto; */
-  /* place-content: center; */
+  background-color: var(--white);
 }
 
 .score__container {
@@ -101,7 +95,7 @@ body {
 .score__summary {
   max-width: 275px;
   margin: auto;
-  opacity: 90%;
+  opacity: 95%;
 }
 
 /* SUMMARY */
@@ -125,6 +119,8 @@ body {
   font-weight: 500;
   padding: 1rem;
   border-radius: 16px;
+
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.07);
 }
 
 .left__side {
@@ -171,7 +167,8 @@ body {
   cursor: pointer;
 
   color: var(--white);
-  background-color: var(--greyblue);
+  background: var(--greyblue);
+  font-size: 1.2rem;
   font-weight: 700;
   text-decoration: none;
   border-radius: 2rem;
@@ -184,26 +181,72 @@ body {
   background: linear-gradient(var(--slateblue), var(--royalblue));
 }
 
-.attribution {
+.attribution,
+a {
   text-align: center;
   font-size: 0.6rem;
-  margin-top: 1.5rem;
+  margin-top: 0.8rem;
+  color: var(--royalblue);
 }
 
 /* =======MEDIA QUERY====== */
-@media (min-width: 62.5em) {
+@media (min-width: 54em) {
   .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
     place-content: center;
     margin: auto;
 
+    max-width: 45rem;
     border-radius: 2.2rem;
-    box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.9);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .score__header {
+    font-size: 1.4rem;
+    margin-top: 1.2rem;
+    margin-bottom: 2.2rem;
+  }
+
+  .score__circle {
+    height: 13rem;
+    width: 13rem;
   }
 
   .score__container {
     place-content: center;
     border-radius: 2.2rem;
+    font-size: 1.1rem;
+  }
+
+  .score__final {
+    font-size: 4.6rem;
+  }
+
+  .score__of {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  .score__tier {
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+
+  .score__summary {
+    max-width: 15rem;
+  }
+  .summary__container {
+    padding: 1.2rem;
+  }
+
+  .summary__header {
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+
+  .category {
+    font-size: 1.2rem;
+    font-weight: 700;
   }
 }
